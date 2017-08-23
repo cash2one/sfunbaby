@@ -1,10 +1,166 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;font-weight: normal;font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;}
-a { text-decoration:none; }
-img { border:none; }
-ol,ul,li,button { list-style:none;border: none }
-input,button,textarea{outline: none;font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;}
-.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
-.clearfix { *zoom:1;}
-html,body{font-size: 16px;width: 100%;font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;}
-
-
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+ol,
+ul,
+li,
+button {
+  list-style: none;
+  border: none;
+}
+input,
+button,
+textarea {
+  outline: none;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+html,
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.inner:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.header {
+  height: 150px;
+}
+.header .top {
+  height: 50px;
+  background-color: #0e2336;
+  font-size: 18px;
+  line-height: 50px;
+  color: #b5bec6;
+}
+.header .top .inner {
+  height: 100%;
+  background-color: #0e2336;
+}
+.header .top .inner .left {
+  float: left;
+}
+.header .top .inner .right {
+  float: right;
+}
+.header .top .inner .right span {
+  color: #83e618;
+  margin-left: 10px;
+}
+.header .bottom {
+  height: 100px;
+}
+.header .bottom .logo {
+  width: 216px;
+  height: 60px;
+  padding-top: 25px;
+  float: left;
+}
+.header .bottom .nav {
+  float: right;
+  padding-top: 25px;
+}
+.header .bottom .nav li {
+  float: left;
+  padding: 8px 18px;
+}
+.header .bottom .nav li.active a p {
+  color: #e61859;
+}
+.header .bottom .nav li a {
+  display: block;
+  color: #0e2336;
+  text-align: center;
+}
+.header .bottom .nav li a p {
+  font-size: 18px;
+}
+.header .bottom .nav li a span {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.header .bottom .nav li.small-nav {
+  padding-right: 38px;
+  position: relative;
+}
+.header .bottom .nav li.small-nav:hover .s-nav {
+  display: block;
+}
+.header .bottom .nav li.small-nav > i {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #86919a;
+  cursor: pointer;
+}
+.header .bottom .nav li.small-nav .s-nav {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.header .bottom .nav li.small-nav .s-nav a {
+  line-height: 20px;
+  margin: 10px;
+}
