@@ -1,11 +1,11 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;font-weight: normal;font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;font-weight: normal;font-family: Microsoft Yahei,PingFang SC, Hiragino Sans GB,  sans-serif ,Arial;}
 a { text-decoration:none; }
 img { border:none; }
 ol,ul,li,button { list-style:none;border: none }
-input,button,textarea{outline: none;font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;}
+input,button,textarea{outline: none;font-family: Microsoft Yahei, PingFang SC, Hiragino Sans GB,sans-serif,Arial;}
 .clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
 .clearfix { *zoom:1;}
-html,body{width:100%;font-size: 16px;font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;}
+html,body{width:100%;font-size: 16px;}
 
 
 .inner{
@@ -52,6 +52,7 @@ html,body{width:100%;font-size: 16px;font-family: PingFang SC, Hiragino Sans GB,
       li{
         float: left;
         padding:8px 18px;
+        position: relative;
         &.active a p{
           color: #e61859;
         }
@@ -61,10 +62,12 @@ html,body{width:100%;font-size: 16px;font-family: PingFang SC, Hiragino Sans GB,
           text-align: center;
           p{
             font-size: 18px;
+            line-height: 28px;
           }
           span{
             font-size: 10px;
             text-transform:uppercase;
+            line-height: 20px;
           }
         }
         &.small-nav{
@@ -75,7 +78,7 @@ html,body{width:100%;font-size: 16px;font-family: PingFang SC, Hiragino Sans GB,
           }
           &>i{
             position: absolute;
-            top: 18px;
+            top: 20px;
             right: 18px;
             display: block;
             width: 0;
@@ -94,12 +97,24 @@ html,body{width:100%;font-size: 16px;font-family: PingFang SC, Hiragino Sans GB,
             background-color: #ffffff;
             text-align: center;
             a{
-              line-height: 20px;
-              margin:10px;
+              line-height: 30px;
+              font-size: 14px;
+              &:hover{
+                background: #ddd;
+              }
             }
           }
 
         }
+      }
+      li+li:before{
+        content: "";
+        position: absolute;
+        top:14px;
+        left: 0;
+        width: 1px;
+        height: 15px;
+        background: #cccccc;
       }
     }
   }
