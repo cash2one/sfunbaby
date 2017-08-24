@@ -41,6 +41,24 @@
       margin-left: -15px;
     }
   }
+  .text{
+    padding:20px 0 50px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #a5a9ad;
+    text-align: center;
+    font-family: "黑体";
+  }
+  .btn{
+    display: block;
+    width: 160px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 34px;
+    color: #ffffff;
+    text-align: center;
+    background: url("../images/btn-bj_30.png") no-repeat center;
+  }
   .section1{
     width: 918px;
     margin:0 auto;
@@ -129,14 +147,6 @@
     h2{
       padding-top: 86px;
     }
-    .text{
-      padding:20px 0 50px;
-      line-height: 32px;
-      font-size: 18px;
-      color: #a5a9ad;
-      text-align: center;
-      font-family: "黑体";
-    }
     .list{
       a{
         display: block;
@@ -173,6 +183,141 @@
 
     }
   }
+  .section4{
+    height: 204px;
+    position: relative;
+    background: url("../images/index-section4_02.jpg") no-repeat center;
+    &>a{
+      position: absolute;
+      top: 81px;
+      left: 50%;
+      width: 155px;
+      height: 40px;
+      margin-left: 390px;
+    }
+  }
+  .section5{
+    width: 1020px;
+    margin:0 auto;
+    padding:99px 0 70px;
+    .left{
+      width: 460px;
+      float: left;
+      h2{
+        text-align: left;
+        span{
+          text-align: left;
+        }
+        &::after{
+          left: 0;
+          margin-left: 0;
+        }
+      }
+      ul{
+        padding-top: 53px;
+        li{
+          color: #86919a;
+          display: none;
+          &.active{
+            display: block;
+          }
+          h4{
+            line-height: 56px;
+            font-size: 24px;
+          }
+          .text{
+            height: 150px;
+          }
+          p{
+            text-align: left;
+            line-height: 32px;
+            font-size: 18px;
+            padding-left: 12px;
+            background: url("../images/index-section5-icon_05.jpg") no-repeat left center;
+          }
+        }
+      }
+    }
+    .right{
+      width: 475px;
+      height: 510px;
+      float: right;
+      background: url("../images/index-seciton5-ico_05.png") no-repeat center;
+      position: relative;
+      &>a{
+        position: absolute;
+        width: 168px;
+        height: 148px;
+      }
+    }
+  }
+  .section6{
+    height: 1209px;
+    background-color: #f3f3f3;
+    h2{
+      padding-top: 85px;
+    }
+    ul{
+      li{
+        width: 300px;
+        height: 418px;
+        margin-right: 26px;
+        float: left;
+        &.right{
+          margin-right: 0;
+        }
+        p{
+          font-size: 18px;
+          line-height: 24px;
+          color: #808b94;
+          padding-top: 26px;
+          text-align: center;
+        }
+        &:hover p{
+          color: #e61859;
+        }
+      }
+    }
+    .btn{
+      margin:10px auto 0;
+    }
+  }
+  .section7{
+    height: 1416px;
+    background-color: transparent;
+    ul{
+      li{
+        height: 326px;
+        a{
+          display: block;
+          position: relative;
+          p{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #0e2336;
+            background-color: rgba(14,35,54,0.5);
+            font-size: 16px;
+            line-height: 30px;
+            color: #ffffff;
+            padding-top: 0;
+            display: none;
+          }
+          &:hover p{
+            display: block;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .btn{
+      margin:48px auto 0;
+    }
+  }
+
+
 
 }
 

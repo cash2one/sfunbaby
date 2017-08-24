@@ -62,6 +62,7 @@ html,
 body {
   width: 100%;
   font-size: 16px;
+  min-width: 1280px;
 }
 .inner {
   width: 1280px;
@@ -96,7 +97,7 @@ body {
   float: right;
 }
 .header .top .inner .right span {
-  color: #83e618;
+  color: #e81759;
   margin-left: 10px;
 }
 .header .bottom {
