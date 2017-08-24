@@ -291,6 +291,7 @@
   height: 30px;
   background-color: #0e2336;
   background-color: rgba(14, 35, 54, 0.5);
+  filter: alpha(opacity=50);
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
