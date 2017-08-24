@@ -27,7 +27,7 @@ td {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+  font-family: Microsoft Yahei, PingFang SC, Hiragino Sans GB, sans-serif, Arial;
 }
 a {
   text-decoration: none;
@@ -46,7 +46,7 @@ input,
 button,
 textarea {
   outline: none;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+  font-family: Microsoft Yahei, PingFang SC, Hiragino Sans GB, sans-serif, Arial;
 }
 .clearfix:after {
   content: ".";
@@ -62,7 +62,6 @@ html,
 body {
   width: 100%;
   font-size: 16px;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif;
 }
 .inner {
   width: 1280px;
@@ -116,6 +115,7 @@ body {
 .header .bottom .nav li {
   float: left;
   padding: 8px 18px;
+  position: relative;
 }
 .header .bottom .nav li.active a p {
   color: #e61859;
@@ -127,10 +127,12 @@ body {
 }
 .header .bottom .nav li a p {
   font-size: 18px;
+  line-height: 28px;
 }
 .header .bottom .nav li a span {
   font-size: 10px;
   text-transform: uppercase;
+  line-height: 20px;
 }
 .header .bottom .nav li.small-nav {
   padding-right: 38px;
@@ -141,7 +143,7 @@ body {
 }
 .header .bottom .nav li.small-nav > i {
   position: absolute;
-  top: 18px;
+  top: 20px;
   right: 18px;
   display: block;
   width: 0;
@@ -161,6 +163,18 @@ body {
   text-align: center;
 }
 .header .bottom .nav li.small-nav .s-nav a {
-  line-height: 20px;
-  margin: 10px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.header .bottom .nav li.small-nav .s-nav a:hover {
+  background: #ddd;
+}
+.header .bottom .nav li + li:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 1px;
+  height: 15px;
+  background: #cccccc;
 }
