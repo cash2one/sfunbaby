@@ -48,20 +48,20 @@
     }
 
     if (doc.readyState === 'complete') {
-        doc.body.style.fontSize = 12  + 'px';
+        doc.body.style.fontSize = 14  + 'px';
     } else {
         doc.addEventListener('DOMContentLoaded', function(e) {
-            doc.body.style.fontSize = 12  + 'px';
+            doc.body.style.fontSize = 14  + 'px';
         }, false);
     }
 
     if (!metaEl) {
         docEl.setAttribute('data-dpr', dpr);
         if (doc.readyState === 'complete') {
-            doc.body.style.fontSize = 12 * dpr + 'px';
+            doc.body.style.fontSize = 14 * dpr + 'px';
         } else {
             doc.addEventListener('DOMContentLoaded', function(e) {
-                doc.body.style.fontSize = 12 * dpr + 'px';
+                doc.body.style.fontSize = 14 * dpr + 'px';
             }, false);
         }
 
