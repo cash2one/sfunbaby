@@ -101,7 +101,16 @@ body {
   margin-left: 10px;
 }
 .header .bottom {
-  height: 100px;
+  width: 100%;
+  height: 98px;
+  border-bottom: 2px solid #cccccc;
+  background-color: #ffffff;
+}
+.header .bottom.fix {
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0;
 }
 .header .bottom .logo {
   width: 216px;
@@ -138,6 +147,7 @@ body {
 .header .bottom .nav li.small-nav {
   padding-right: 38px;
   position: relative;
+  z-index: 2;
 }
 .header .bottom .nav li.small-nav:hover .s-nav {
   display: block;
@@ -158,6 +168,7 @@ body {
   position: absolute;
   top: 55px;
   left: 0;
+  z-index: 9;
   width: 100%;
   padding: 10px 0;
   background-color: #ffffff;
