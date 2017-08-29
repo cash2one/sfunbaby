@@ -297,3 +297,18 @@ body {
 .footer .bottom .inner .right .three ul li p {
   text-align: center;
 }
+.crumb {
+  color: #78848e;
+  font-size: 14px;
+  line-height: 35px;
+  height: 35px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.crumb p {
+  padding-left: 20px;
+  background: url("../images/crumbs_03.png") no-repeat left center;
+}
+.crumb a {
+  color: #78848e;
+}

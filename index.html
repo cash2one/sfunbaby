@@ -16,8 +16,8 @@
 
 <div class="banner" id="banner">
     <a class="pic" href="index-commitment.html" style="display:block;background-image: url('images/banner_1.jpg');"></a>
-    <a class="pic" href="" style="display: none;background-image: url('images/banner_2.jpg');"></a>
-    <a class="pic" href="" style="display: none;background-image: url('images/banner_3.jpg');"></a>
+    <a class="pic" href="index-baby.html" style="display: none;background-image: url('images/banner_2.jpg');"></a>
+    <a class="pic" href="index-doctor.html" style="display: none;background-image: url('images/banner_3.jpg');"></a>
     <ul class="bar"></ul>
     <div class="btns">
         <span class="left-btn"></span>
@@ -243,73 +243,73 @@
             <ul class="clearfix">
                 <li>
                     <a href="">
-                        <img src="images/index-section7_1.png">
+                        <img src="images/index-section7_1.jpg">
                         <p>Nova Clinic 生殖遗传健康中心</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_2.png">
+                        <img src="images/index-section7_2.jpg">
                         <p> Intersono IVF生殖遗传健康中心</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_3.png">
+                        <img src="images/index-section7_3.jpg">
                         <p>ADONIS生殖遗传健康中心</p>
                     </a>
                 </li>
                 <li class="right">
                     <a href="">
-                        <img src="images/index-section7_4.png">
+                        <img src="images/index-section7_4.jpg">
                         <p>BTC辅助生殖医疗研究中心</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_5.png">
+                        <img src="images/index-section7_5.jpg">
                         <p>Dr. Richard Schmidt – Physician</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_6.png">
+                        <img src="images/index-section7_6.jpg">
                         <p>Dr. Anna Vointseva</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_7.png">
+                        <img src="images/index-section7_7.jpg">
                         <p>Dr. Alexander Lapshikhin</p>
                     </a>
                 </li>
                 <li class="right">
                     <a href="">
-                        <img src="images/index-section7_8.png">
+                        <img src="images/index-section7_8.jpg">
                         <p>Dr. Igor Davydov</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_9.png">
+                        <img src="images/index-section7_9.jpg">
                         <p>Dr. Vitaliy Kovpak.HCLD</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_10.png">
+                        <img src="images/index-section7_10.jpg">
                         <p>Dr. Elena Mozgovaya</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="images/index-section7_11.png">
+                        <img src="images/index-section7_11.jpg">
                         <p>Dr. Kotlik Yulia Aleksandrovna</p>
                     </a>
                 </li>
                 <li class="right">
                     <a href="">
-                        <img src="images/index-section7_12.png">
+                        <img src="images/index-section7_12.jpg">
                         <p>Dr. Trisko Kristina</p>
                     </a>
                 </li>
@@ -395,6 +395,68 @@
         console.log(m);
         $('#total-price').html('总价人民币￥'+m+'万元');
     })
+
+    //轮播图代码
+    function bannerChange(speed){
+        var bannerObj=$("#banner");
+        var pics=bannerObj.find(".pic");
+        var m=0;
+
+        var content='';
+        for(var i=0;i<pics.length;i++){
+            content+="<li></li>";
+        }
+        bannerObj.find(".bar").html(content).css({'width':22*pics.length+2+'px',"margin-left":-(22*pics.length+2)/2});
+        var bars=bannerObj.find(".bar li");
+        bars.eq(0).addClass('active');
+
+        function picChange(){
+            bars.removeClass('active').eq(m).addClass('active');
+            pics.fadeOut().eq(m).fadeIn();
+        }
+        //点击圆点切换Banner
+        bars.on('click',function(){
+            m=$(this).index();
+            picChange();
+        });
+
+        //点击左右切换按钮
+        bannerObj.find(".left-btn").on("click",function(){
+            m--;
+            if(m<0){
+                m=pics.length-1;
+            }
+            picChange();
+        });
+        bannerObj.find(".right-btn").on("click",function(){
+            m++;
+            if(m>=pics.length){
+                m=0;
+            }
+            picChange();
+        });
+
+        //自动轮播
+        var timer;
+        function timeChange(){
+            clearInterval(timer);
+            timer=setInterval(function(){
+                m++;
+                if(m>=pics.length){
+                    m=0;
+                }
+                picChange();
+            },speed);
+        }
+        timeChange();
+        bannerObj.on("mouseover",function(){
+            clearInterval(timer);
+        });
+        bannerObj.on("mouseout",function(){
+            timeChange();
+        })
+    }
+    bannerChange(3000);
 </script>
 </body>
 </html>
