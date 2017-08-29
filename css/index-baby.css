@@ -1,63 +1,82 @@
-.banner {
-  min-width: 1280px;
-  height: 450px;
-  margin: 0 auto;
-  position: relative;
+.main .inner {
+  width: 1200px;
 }
-.banner .pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
+.main .small-banner {
   background: url("") no-repeat center;
+  height: 420px;
 }
-.banner .bar {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  z-index: 2;
-  width: 150px;
-  height: 12px;
-  margin-left: -75px;
-  text-align: center;
+.main h2 {
+  color: #e61859;
+  height: 38px;
+  line-height: 38px;
+  font-size: 30px;
+  font-weight: bolder;
+  padding-bottom: 12px;
 }
-.banner .bar li {
+.main h2 span {
+  width: 38px;
+  height: 38px;
+  display: block;
   float: left;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #cccccc;
-  background: #fff;
-  margin: 0 5px;
-  cursor: pointer;
-  border-radius: 50%;
+  background-color: #e61859;
+  color: #ffffff;
+  margin-right: 15px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 26px;
 }
-.banner .bar li.active {
-  background-color: #333;
+.main p {
+  font-size: 18px;
+  line-height: 36px;
+  color: #86919a;
 }
-.banner .btns {
-  display: none;
+.main h4 {
+  font-size: 18px;
+  line-height: 36px;
+  color: #86919a;
+  font-weight: bolder;
 }
-.banner .btns span {
-  display: block;
-  width: 49px;
-  height: 104px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1000;
-  margin-top: -50px;
+.main .section1 {
+  padding: 48px 0;
 }
-.banner .btns .left-btn {
-  margin-left: -550px;
-  background: url('../images/foot.png') no-repeat 0 0;
+.main .section1 .left {
+  float: left;
+  width: 858px;
 }
-.banner .btns .right-btn {
-  margin-left: 550px;
-  background: url(../images/foot.png) no-repeat -49px 0;
+.main .section1 .left .text {
+  padding-top: 13px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #86919a;
+  border-bottom: 1px solid #e6e9eb;
 }
-.banner:hover .btns {
-  display: block;
+.main .section1 .left .text p {
+  padding-bottom: 12px;
+}
+.main .section1 .right {
+  float: right;
+  width: 210px;
+  padding: 22px 32px;
+  background-color: #f5f5f5;
+}
+.main .section1 .right li {
+  padding: 22px 0;
+}
+.main .section2 {
+  padding-top: 22px;
+}
+.main .section2 h2 {
+  padding: 44px 0 26px;
+}
+.main .section2 .list {
+  padding: 28px 0;
+  border-bottom: 1px solid #cfd3d7;
+}
+.main .section2 .list .left {
+  width: 585px;
+  float: left;
+}
+.main .section2 .list .right {
+  width: 585px;
+  float: right;
 }
