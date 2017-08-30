@@ -5,6 +5,9 @@
   background: url("") no-repeat center;
   height: 420px;
 }
+.main .crumb p {
+  font-size: 14px;
+}
 .main h2 {
   color: #e61859;
   height: 38px;
@@ -29,6 +32,7 @@
   font-size: 18px;
   line-height: 36px;
   color: #86919a;
+  text-align: justify;
 }
 .main h4 {
   font-size: 18px;
@@ -79,4 +83,80 @@
 .main .section2 .list .right {
   width: 585px;
   float: right;
+}
+.main .section3 {
+  background-color: #f5f5f5;
+  padding-top: 32px;
+  height: 297px;
+}
+.main .section3 img {
+  margin: 48px 0 0 40px;
+}
+.main .section4 h2 {
+  padding: 41px 0 27px;
+}
+.main .section4 h2 .to {
+  display: inline-block;
+  color: inherit;
+  transform: scale(0.7);
+}
+.main .section4 ul {
+  padding-top: 21px;
+}
+.main .section4 ul li {
+  width: 392px;
+  height: 470px;
+  float: left;
+}
+.main .section4 ul li h4 {
+  line-height: 30px;
+  padding-top: 10px;
+}
+.main .section4 ul li p {
+  line-height: 30px;
+}
+.main .section5 {
+  background-color: #f5f5f5;
+  padding: 54px 0 58px;
+}
+.main .section5 h2 {
+  padding-bottom: 33px;
+}
+.main .section5 ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #dde0e2;
+}
+.main .section6 {
+  padding: 60px 0 65px;
+}
+.main .section6 .img {
+  float: right;
+  padding: 0 0 20px 38px;
+}
+.main .section6 .img img {
+  display: block;
+  margin-bottom: 16px;
+}
+.main .section6 h2 {
+  padding-bottom: 42px;
+}
+.main .section6 .text {
+  padding-bottom: 24px;
+}
+.main .section7 {
+  padding: 46px 0 54px;
+  background-color: #f5f5f5;
+}
+.main .section7 .img {
+  padding-left: 57px;
+}
+.main .section8 {
+  padding: 80px 0 75px;
+}
+.main .section8 img {
+  display: block;
+  margin: 34px 0 63px;
+}
+.main .section8 .text {
+  padding-bottom: 34px;
 }
