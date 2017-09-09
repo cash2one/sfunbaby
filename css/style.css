@@ -64,6 +64,12 @@ body {
   font-size: 14px;
   min-width: 1280px;
 }
+a {
+  color: #979ca2;
+}
+a:hover {
+  color: #e81759;
+}
 .inner {
   width: 1280px;
   margin: 0 auto;
