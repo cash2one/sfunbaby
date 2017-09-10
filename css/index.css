@@ -178,7 +178,7 @@
 .main .section2 .bottom .right li {
   width: 160px;
   height: 52px;
-  float: right;
+  float: left;
   text-align: right;
 }
 .main .section2 .bottom ul li a {

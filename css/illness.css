@@ -1,0 +1,187 @@
+.main .inner {
+  width: 1200px;
+}
+.main .small-banner {
+  display: block;
+  background: url("../images/illness-banner_02.jpg") no-repeat center;
+  height: 450px;
+}
+.main .crumb {
+  line-height: 44px;
+  height: 44px;
+}
+.main .crumb p {
+  font-size: 14px;
+}
+.main h2 {
+  height: 73px;
+  text-align: left;
+  color: #e61859;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  position: relative;
+}
+.main h2 span {
+  display: block;
+  text-align: left;
+  color: #cacbcd;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: normal;
+}
+.main h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background: #e61859;
+}
+.main .section1 {
+  margin-top: 36px;
+  border-top: 1px solid #e5e5e5;
+  padding: 37px 0 53px;
+  min-height: 392px;
+}
+.main .section1 .left {
+  float: left;
+  width: 740px;
+}
+.main .section1 .left p,
+.main .section1 .left h3 {
+  font-size: 18px;
+  color: #6e7b86;
+  line-height: 32px;
+  padding-bottom: 16px;
+}
+.main .section1 .left h3 {
+  font-weight: bolder;
+}
+.main .section1 .right {
+  float: right;
+  padding-top: 6px;
+}
+.main .section1 .right img {
+  display: block;
+  border: 1px solid #eeeeee;
+}
+.main .section2 {
+  padding-bottom: 45px;
+}
+.main .section2 img {
+  display: block;
+}
+.main .section2 h2 {
+  margin: 99px 0 35px;
+}
+.main .section2 .text {
+  padding-bottom: 39px;
+}
+.main .section2 .text .left {
+  float: left;
+}
+.main .section2 .text .right {
+  width: 720px;
+  float: right;
+}
+.main .section2 .text .right p {
+  font-size: 18px;
+  color: #6e7b86;
+  line-height: 32px;
+  padding-bottom: 16px;
+}
+.main .section2 .text .right h3 {
+  font-size: 18px;
+  color: #6e7b86;
+  line-height: 32px;
+  font-weight: bolder;
+}
+.main .section2 .bottom {
+  width: 1014px;
+  padding: 0 92px;
+  border: 1px solid #e6e9eb;
+}
+.main .section2 .bottom i {
+  float: left;
+  display: block;
+  width: 48px;
+  height: 133px;
+  background: url("../images/illness-step_16.jpg") no-repeat center;
+}
+.main .section2 .bottom .step {
+  float: left;
+  width: 187px;
+  height: 174px;
+  padding: 30px 15px 0;
+}
+.main .section2 .bottom .step span {
+  display: block;
+  background-color: #e61859;
+  width: 65px;
+  height: 65px;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  line-height: 65px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.main .section2 .bottom .step p {
+  text-align: center;
+  padding-top: 16px;
+  line-height: 32px;
+  color: #6e7b86;
+  font-size: 18px;
+}
+.main .section3 {
+  padding-top: 37px;
+  background-color: #f3f3f3;
+}
+.main .section3 ul {
+  padding-top: 40px;
+}
+.main .section3 ul li {
+  float: left;
+  width: 223px;
+  height: 318px;
+}
+.main .section3 ul li img {
+  display: block;
+}
+.main .section3 ul li p {
+  text-align: center;
+  padding-top: 12px;
+  line-height: 30px;
+  color: #808b94;
+  font-size: 18px;
+}
+.main .section3 ul li + li {
+  margin-left: 20px;
+}
+.main .section4 {
+  background-color: transparent;
+}
+.main .section4 ul li {
+  width: 236px;
+  height: 261px;
+}
+.main .section4 ul li + li {
+  margin-left: 5px;
+}
+.main .section5 {
+  background-color: #f3f3f3;
+  padding: 45px 0 50px;
+}
+.main .section5 img {
+  display: block;
+  margin: 45px auto 0;
+}
+.main .section6 {
+  padding: 47px 0 152px;
+}
+.main .section6 img {
+  display: block;
+  margin: 44px auto 0;
+}
